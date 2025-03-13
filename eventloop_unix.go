@@ -112,6 +112,10 @@ func (el *eventloop) loopOpen(c *conn) error {
 }
 
 func (el *eventloop) loopRead(c *conn) error {
+	if !c.opened {
+		return fmt.Errorf("connection(fd=%d) has been closed", c.fd)
+	}
+
 	n, err := unix.Read(c.fd, el.buffer)
 	if n == 0 || err != nil {
 		if err == unix.EAGAIN {

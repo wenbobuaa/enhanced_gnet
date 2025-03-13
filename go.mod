@@ -1,4 +1,4 @@
-module github.com/liujiangang01/enhanced_gnet
+module github.com/wenbobuaa/enhanced_gnet
 
 go 1.16
 
