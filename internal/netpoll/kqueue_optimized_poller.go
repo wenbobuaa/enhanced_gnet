@@ -32,9 +32,9 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	"github.com/liujiangang01/enhanced_gnet/errors"
-	"github.com/liujiangang01/enhanced_gnet/internal/queue"
-	"github.com/liujiangang01/enhanced_gnet/logging"
+	"github.com/wenbobuaa/enhanced_gnet/errors"
+	"github.com/wenbobuaa/enhanced_gnet/internal/queue"
+	"github.com/wenbobuaa/enhanced_gnet/logging"
 )
 
 // Poller represents a poller which is in charge of monitoring file-descriptors.

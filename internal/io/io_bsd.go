@@ -26,7 +26,7 @@ package io
 import (
 	"golang.org/x/sys/unix"
 
-	"github.com/liujiangang01/enhanced_gnet/errors"
+	"github.com/wenbobuaa/enhanced_gnet/errors"
 )
 
 // Writev simply calls write() multiple times cuz writev() on BSD-like OS's is not yet implemented in Go.

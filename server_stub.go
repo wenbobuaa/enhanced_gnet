@@ -24,7 +24,7 @@
 
 package gnet
 
-import "github.com/liujiangang01/enhanced_gnet/errors"
+import "github.com/wenbobuaa/enhanced_gnet/errors"
 
 type server struct {
 	subEventLoopSet loadBalancer // event-loops for handling events

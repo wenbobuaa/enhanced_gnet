@@ -30,11 +30,11 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	"github.com/liujiangang01/enhanced_gnet/internal/netpoll"
-	"github.com/liujiangang01/enhanced_gnet/internal/socket"
-	"github.com/liujiangang01/enhanced_gnet/pool/bytebuffer"
-	prb "github.com/liujiangang01/enhanced_gnet/pool/ringbuffer"
-	"github.com/liujiangang01/enhanced_gnet/ringbuffer"
+	"github.com/wenbobuaa/enhanced_gnet/internal/netpoll"
+	"github.com/wenbobuaa/enhanced_gnet/internal/socket"
+	"github.com/wenbobuaa/enhanced_gnet/pool/bytebuffer"
+	prb "github.com/wenbobuaa/enhanced_gnet/pool/ringbuffer"
+	"github.com/wenbobuaa/enhanced_gnet/ringbuffer"
 )
 
 type conn struct {

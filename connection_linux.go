@@ -23,7 +23,7 @@
 
 package gnet
 
-import "github.com/liujiangang01/enhanced_gnet/internal/netpoll"
+import "github.com/wenbobuaa/enhanced_gnet/internal/netpoll"
 
 func (c *conn) handleEvents(ev uint32) error {
 	// Don't change the ordering of processing EPOLLOUT | EPOLLRDHUP / EPOLLIN unless you're 100%

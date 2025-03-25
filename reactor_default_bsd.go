@@ -27,8 +27,8 @@ package gnet
 import (
 	"runtime"
 
-	"github.com/liujiangang01/enhanced_gnet/errors"
-	"github.com/liujiangang01/enhanced_gnet/internal/netpoll"
+	"github.com/wenbobuaa/enhanced_gnet/errors"
+	"github.com/wenbobuaa/enhanced_gnet/internal/netpoll"
 )
 
 func (el *eventloop) activateMainReactor(lockOSThread bool) {

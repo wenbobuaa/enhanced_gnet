@@ -25,9 +25,9 @@ import (
 	"os"
 	"sync"
 
-	"github.com/liujiangang01/enhanced_gnet/errors"
-	"github.com/liujiangang01/enhanced_gnet/internal/netpoll"
-	"github.com/liujiangang01/enhanced_gnet/logging"
+	"github.com/wenbobuaa/enhanced_gnet/errors"
+	"github.com/wenbobuaa/enhanced_gnet/internal/netpoll"
+	"github.com/wenbobuaa/enhanced_gnet/logging"
 )
 
 type listener struct {

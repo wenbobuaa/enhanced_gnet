@@ -38,10 +38,10 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
-	"github.com/liujiangang01/enhanced_gnet/errors"
-	"github.com/liujiangang01/enhanced_gnet/logging"
-	"github.com/liujiangang01/enhanced_gnet/pool/bytebuffer"
-	"github.com/liujiangang01/enhanced_gnet/pool/goroutine"
+	"github.com/wenbobuaa/enhanced_gnet/errors"
+	"github.com/wenbobuaa/enhanced_gnet/logging"
+	"github.com/wenbobuaa/enhanced_gnet/pool/bytebuffer"
+	"github.com/wenbobuaa/enhanced_gnet/pool/goroutine"
 )
 
 func TestCodecServe(t *testing.T) {

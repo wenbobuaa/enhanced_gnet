@@ -22,8 +22,8 @@ package ringbuffer
 import (
 	"errors"
 
-	"github.com/liujiangang01/enhanced_gnet/internal"
-	"github.com/liujiangang01/enhanced_gnet/pool/bytebuffer"
+	"github.com/wenbobuaa/enhanced_gnet/internal"
+	"github.com/wenbobuaa/enhanced_gnet/pool/bytebuffer"
 )
 
 const (

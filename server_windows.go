@@ -28,7 +28,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	gerrors "github.com/liujiangang01/enhanced_gnet/errors"
+	gerrors "github.com/wenbobuaa/enhanced_gnet/errors"
 )
 
 var errCloseAllConns = errors.New("close all connections in event-loop")

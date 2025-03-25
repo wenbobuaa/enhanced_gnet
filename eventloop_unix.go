@@ -35,10 +35,10 @@ import (
 
 	"golang.org/x/sys/unix"
 
-	gerrors "github.com/liujiangang01/enhanced_gnet/errors"
-	"github.com/liujiangang01/enhanced_gnet/internal/io"
-	"github.com/liujiangang01/enhanced_gnet/internal/netpoll"
-	"github.com/liujiangang01/enhanced_gnet/logging"
+	gerrors "github.com/wenbobuaa/enhanced_gnet/errors"
+	"github.com/wenbobuaa/enhanced_gnet/internal/io"
+	"github.com/wenbobuaa/enhanced_gnet/internal/netpoll"
+	"github.com/wenbobuaa/enhanced_gnet/logging"
 )
 
 type eventloop struct {

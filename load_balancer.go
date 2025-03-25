@@ -24,7 +24,7 @@ import (
 	"hash/crc32"
 	"net"
 
-	"github.com/liujiangang01/enhanced_gnet/internal"
+	"github.com/wenbobuaa/enhanced_gnet/internal"
 )
 
 // LoadBalancing represents the the type of load-balancing algorithm.

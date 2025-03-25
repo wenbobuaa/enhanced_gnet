@@ -28,9 +28,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/liujiangang01/enhanced_gnet/errors"
-	"github.com/liujiangang01/enhanced_gnet/internal"
-	"github.com/liujiangang01/enhanced_gnet/logging"
+	"github.com/wenbobuaa/enhanced_gnet/errors"
+	"github.com/wenbobuaa/enhanced_gnet/internal"
+	"github.com/wenbobuaa/enhanced_gnet/logging"
 )
 
 // Action is an action that occurs after the completion of an event.

@@ -26,7 +26,7 @@ import (
 	"math/rand"
 	"testing"
 
-	"github.com/liujiangang01/enhanced_gnet/errors"
+	"github.com/wenbobuaa/enhanced_gnet/errors"
 )
 
 type mockConn struct {

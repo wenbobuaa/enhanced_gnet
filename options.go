@@ -25,7 +25,7 @@ import (
 
 	"go.uber.org/zap/zapcore"
 
-	"github.com/liujiangang01/enhanced_gnet/logging"
+	"github.com/wenbobuaa/enhanced_gnet/logging"
 )
 
 // Option is a function that will set up option.
