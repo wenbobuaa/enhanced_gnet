@@ -48,8 +48,6 @@ func (svr *server) acceptNewConnection(_ netpoll.IOEvent) error {
 		return err
 	}
 
-	svr.opts.Logger.Infof("Accept() get nfd: %v", nfd)
-
 	netAddr := socket.SockaddrToTCPOrUnixAddr(sa)
 	if svr.opts.TCPKeepAlive > 0 && svr.ln.network == "tcp" {
 		err = socket.SetKeepAlive(nfd, int(svr.opts.TCPKeepAlive/time.Second))
@@ -59,7 +57,7 @@ func (svr *server) acceptNewConnection(_ netpoll.IOEvent) error {
 	el := svr.lb.next(netAddr)
 	c := newTCPConn(nfd, el, sa, netAddr)
 
-	svr.opts.Logger.Infof("Accept() get tcp conn: %v", c)
+	svr.opts.Logger.Infof("Accept() get tcp conn: %v, %v", c.fd, c.remoteAddr)
 
 	err = el.poller.UrgentTrigger(el.loopRegister, c)
 	if err != nil {
@@ -86,8 +84,6 @@ func (el *eventloop) loopAccept(_ netpoll.IOEvent) error {
 		return err
 	}
 
-	el.getLogger().Infof("Accept() get nfd: %v", nfd)
-
 	netAddr := socket.SockaddrToTCPOrUnixAddr(sa)
 	if el.svr.opts.TCPKeepAlive > 0 && el.svr.ln.network == "tcp" {
 		err = socket.SetKeepAlive(nfd, int(el.svr.opts.TCPKeepAlive/time.Second))
@@ -95,7 +91,7 @@ func (el *eventloop) loopAccept(_ netpoll.IOEvent) error {
 	}
 
 	c := newTCPConn(nfd, el, sa, netAddr)
-	el.getLogger().Infof("Accept() get tcp conn: %v", c)
+	el.getLogger().Infof("Accept() get tcp conn: %v, %v", c.fd, c.remoteAddr)
 	if err = el.poller.AddRead(c.pollAttachment); err != nil {
 		return err
 	}
